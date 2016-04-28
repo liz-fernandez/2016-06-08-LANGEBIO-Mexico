@@ -47,6 +47,16 @@ eventbrite:      24816131718 # optional (insert the alphanumeric key for Eventbr
   height="248px"
   scrolling="auto">
 </iframe>
+<p>
+<strong>We are having some problems with the EventBrite page in some browsers. Please try to register at home or send an email
+    to:</strong>
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>selene.fernandez.valverde@gmail.com.</a>
+  {% else %}
+    <a href='mailto:{{site.contact}}'>selene.fernandez.valverde@gmail.com</a>
+    {% endif %}
+    <strong>Thanks.</strong>
+
 {% endif %}
 
 <h2 id="general">General Information</h2>
