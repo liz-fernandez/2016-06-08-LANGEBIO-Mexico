@@ -151,6 +151,13 @@ eventbrite:      24816131718 # optional (insert the alphanumeric key for Eventbr
     <a href='mailto:{{site.contact}}'>get in touch</a>
   {% endif %}
   and we will attempt to provide them. 
+  We may provide refreshments so if you have any special dietary requirements 
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>let us know</a>
+  {% else %}
+    <a href='mailto:{{site.contact}}'>let us know</a>
+   {% endif %}
+   .
 </p>
 
 <!--
